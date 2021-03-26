@@ -25,14 +25,18 @@ function listTitles(genreShelf) {
 };
 
 function searchShelf(shelf, book) {
-  for (i = 0; i < shelf.length; i++) {
-    if (shelf[i].title === book.title) {
-      return true
-    } else {
-      return false
-    }
+  var isThere = false;
+  for (var i = 0; i < shelf.length; i++) {
+    //console.log(shelf[i].title);
+    if (shelf[i].title === book) {
+    isThere = true;
+  } else {
+    isThere = false;
+     }
   }
+return isThere;
 };
+
 
 module.exports = {
   shelfBook,
