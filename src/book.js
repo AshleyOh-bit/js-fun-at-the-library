@@ -14,7 +14,7 @@ var reviewArr = [];
 
 function saveReview(review, reviews) {
   if (reviews.includes(review)){
-    console.log("Please add an original review.")
+    return "Please add an original review."
   } else {
   return reviews.push(review);
 }
