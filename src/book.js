@@ -12,11 +12,11 @@ function buildMainCharacter(name, age, pronouns) {
 
 var reviewArr = [];
 
-function saveReview(review, reviewArr) {
-  if (reviewArr.includes(review)){
+function saveReview(review, reviews) {
+  if (reviews.includes(review)){
     console.log("Please add an original review.")
   } else {
-  return reviewArr.push(review);
+  return reviews.push(review);
 }
 };
 
