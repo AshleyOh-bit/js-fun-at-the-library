@@ -214,12 +214,15 @@ describe("shelf.js", function() {
         genre: "sciFi"
       };
       var sciFiShelf = [dune, hyperion];
+      //console.log(dune.title);
 
       assert.equal(searchShelf(sciFiShelf, "Hyperion"), true);
+      //console.log(book.title);
       assert.equal(searchShelf(sciFiShelf, "The Fifth Season"), false);
+      //console.log(book.title);
     });
 
-    it.skip("should tell us if a title is on a different shelf", function() {
+    it("should tell us if a title is on a different shelf", function() {
       var bossypants = {
         title: "Bossypants",
         mainCharacter: { name: "Tina Fey", age: 50, pronouns: "she/her" },
