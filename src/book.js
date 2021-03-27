@@ -10,14 +10,12 @@ function buildMainCharacter(name, age, pronouns) {
   }
 };
 
-var reviewArr = [];
-
 function saveReview(review, reviews) {
   if (reviews.includes(review)){
     return "Please add an original review."
   } else {
-  return reviews.push(review);
-}
+    return reviews.push(review);
+  }
 };
 
 function calculatePageCount(title) {
